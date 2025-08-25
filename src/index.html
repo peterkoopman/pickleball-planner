@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Node.js App</title>
+    <!-- Load Tailwind CSS from CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font for a clean, modern look -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <!-- Main container to center content on the page -->
+    <div class="flex items-center justify-center min-h-screen">
+        <!-- Content card with rounded corners and a shadow -->
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl max-w-lg w-full">
+            <!-- Main heading for the page -->
+            <h1 class="text-3xl sm:text-4xl font-bold mb-4">
+                Pickleball Planner
+            </h1>
+            <!-- Introductory paragraph -->
+            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-6">
+                This is a basic home page to get you to the Pickleball Planner.
+                  <br>
+                Use Postman or similar to test endpoints other than GET requests.
+            </p>
+                <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-6">Start by running <code>docker compose up -d</code> and <code>npm start</code> in the terminal. </p>
+                        <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-6">Follow the links below to view the available endpoints.</p>
+                        <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-6">Use Postman or similar to test endpoints other than GET requests.</p>
+
+            <ul class="list-none list-inside text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-6 text-left">
+                <!-- List of available endpoints -->
+                <li><a href="/setup">Initial set up for the database</a></li>
+                <li><a href="/games">All games</a></li>
+                <li><a href="/games/1">Game 1</a></li>
+                <li><a href="/games/2">Game 2</a></li>
+                <li><a href="/games/3">Game 3</a></li>
+                <li><a href="/games/4">Game 4</a></li>
+                <li><a href="/games/5">Game 5</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

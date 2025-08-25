@@ -107,7 +107,7 @@ app.post('/games/:id/players', (req, res) => {
   const qry = 'INSERT INTO players (name, email, game_id) VALUES ($1, $2, $3)';
   const values = [name, email, id];
   try {
-    const result = pool.query(qry, values);
+    pool.query(qry, values);
     return res.status(200).send('Player added to game');
   } catch(error) {
     console.log(error);
